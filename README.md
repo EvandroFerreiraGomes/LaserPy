@@ -54,9 +54,9 @@
 ## Desenvolvedor
 
 Evandro Ferreira  
-[evandrogf.com.br](https://evandrogf.com.br)  
-[itch.io](https://archaicbit.itch.io)  
-Contato: contato@evandrogf.com.br
+[evandrogf.com.br](https://www.evandrogf.com.br)  
+[ArchaicBit at itch.io](https://archaicbit.itch.io)  
+E-mail: contato@evandrogf.com.br
 
 ## 📄 Licença
 
