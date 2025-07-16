@@ -1,23 +1,23 @@
-LaserPy
+## LaserPy v1.1
 
 **LaserPy** é um jogo puzzle 2D desenvolvido inteiramente com Python, o jogador manipula espelhos para refletir feixes de laser até seus respectivos receptores. Com uma estética retrô e mecânicas simples, o desafio cresce a cada nível, exigindo lógica e estratégia.
 
 ## Funcionalidades
 
-- 2 cores de emissores de lasers independentes (vermelho, azul e verde).
-- Receptores que só explodem quando atingidos pelo laser da mesma cor.
-- Espelhos arrastáveis e rotacionáveis para guiar o laser até o receptor.
-- Níveis progressivamente mais difíceis com paredes, obstáculos e múltiplos elementos.
-- Animações de impacto, laser e partículas.
-- GUI com cronômetro, contagem de movimentos e botão de reinício.
-- Menu inicial com logo e créditos finais.
+- 3 cores de emissores de lasers independentes (vermelho, azul e verde)
+- Receptores que só explodem quando atingidos pelo laser da mesma cor
+- Espelhos arrastáveis e rotacionáveis para guiar o laser até o receptor
+- Níveis progressivamente mais difíceis com paredes, obstáculos e múltiplos elementos
+- Animações de impacto, laser e partículas
+- GUI com cronômetro, contagem de movimentos e botão de reinício
+- Menu inicial com logo e créditos finais
 
 ## Como jogar
 
-1. Execute `python laserpy_v1.1.py`.
-2. No menu inicial, clique em **Iniciar Jogo**.
-3. Arraste os espelhos com o mouse. Clique duas vezes sobre um espelho para rotacioná-lo.
-4. Faça com que cada laser atinja o receptor da mesma cor.
+1. Execute `python laserpy_v1.1.py`
+2. No menu inicial, clique em **Iniciar Jogo**
+3. Arraste os espelhos com o mouse. Clique duas vezes sobre um espelho para rotacioná-lo
+4. Faça com que cada laser atinja o receptor da mesma cor
 5. Avance pelos níveis e conclua todos os desafios!
 
 ## Controles
@@ -39,19 +39,19 @@ LaserPy
 ![screenshot](docs/screen1.png)
 ![screenshot](docs/screen2.png)
 
-## 🧩 Arquitetura do código
+## Arquitetura do código
 
-- `laserpy_v1.1.py`: Código principal do jogo
+- `laserpy.py`: Código principal do jogo
 - `logo_laserpy.png`: Logo exibida no menu
 - `docs/`: Screenshots
   
-## 🧪 To-Do / Futuras melhorias
+## To-Do / Futuras melhorias
 
 - [ ] Adicionar 10 levels
 - [ ] Sistema de pontuação baseado em tempo/movimentos
 - [ ] Fazer um hall of fame (local)
 
-## 👨‍💻 Desenvolvedor
+## Desenvolvedor
 
 Evandro Ferreira  
 [evandrogf.com.br](https://evandrogf.com.br)  
