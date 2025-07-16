@@ -171,8 +171,7 @@ def calcular_trajetoria_laser(laser, espelhos, paredes):
         if (linha, coluna) == destino_pos:
             atingiu_destino = True
             if not laser["explodiu"]:
-                break  # Interrompe o laser se ainda não explodiu
-
+                break  
         if (linha, coluna) in paredes:
             break
 
@@ -227,9 +226,9 @@ def exibir_tela_inicial():
                     pygame.quit()
                     sys.exit()
 
-# Inicialização
+# inicialização do jogo
 exibir_tela_inicial()
-nivel_atual = 5
+nivel_atual = 1
 
 lasers, espelhos, paredes, movimentos_esperados = carregar_nivel(nivel_atual)
 movimentos = 0
@@ -304,7 +303,7 @@ while True:
         y_d = offset_y + linha_d * tamanho_bloco
         centro_d = (x_d + tamanho_bloco // 2, y_d + tamanho_bloco // 2)
 
-        # Desenhar seta do emissor
+        # Desenhar emissor
         linha, coluna = laser["emissor"]
         x = offset_x + coluna * tamanho_bloco
         y = offset_y + linha * tamanho_bloco
@@ -318,7 +317,7 @@ while True:
             pontos = [(x + 10, y + 10), (x + 40, y + 10), (x + 25, y + 40)]
         pygame.draw.polygon(tela, cor, pontos)
 
-        # Fluxo laser
+        # animação do laser
         for seg in segmentos:
             for i in range(0, 100, 20):
                 t = (pygame.time.get_ticks() // 5 + i) % 100 / 100
@@ -415,7 +414,7 @@ while True:
     tempo_agora = pygame.time.get_ticks()
     tempo_desde_animacao = (pygame.time.get_ticks() - tempo_animacao_comum) / 1000 if tempo_animacao_comum else 0
 
-    # Verifica se todos os lasers atingiram e explode terminou
+    # verifica se todos os lasers atingiram e tempo da animação terminou
     if laser_atingiu_todos and not particulas and tempo_desde_animacao >= 5:
         nivel_atual += 1
         if nivel_atual in levels:
